@@ -3,22 +3,21 @@
  navbar-expand-sm is needed for responsive collpasing -->
 
 
-<nav class="navbar navbar-expand-sm navbar-dark bg-primary mb-3">
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark p-2">
     <div class="container">
-        <a class="navbar-brand" href="#">My Company Brand</a>
+        <!-- <a class="navbar-brand" href="#">My Company Brand</a> -->
         
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
-        
-        
-        <div class="collapse navbar-collapse" id="navbarNav">
+                
+        <div class="collapse in navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="#" routerLink="/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#" routerLink="/movie-list">List</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Services</a>
