@@ -7,7 +7,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { MovieListComponent } from './components/movie-list/movie-list.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './components/home/home.component';
-import { OdysseyComponent } from './components/odyssey/odyssey.component';
+import { MovieComponent } from './components/movie/movie.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +16,7 @@ import { OdysseyComponent } from './components/odyssey/odyssey.component';
     HeaderComponent,
     MovieListComponent,
     HomeComponent,
-    OdysseyComponent
+    MovieComponent
   ],
   imports: [
     BrowserModule,
