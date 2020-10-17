@@ -9,14 +9,31 @@ import { ActivatedRoute } from '@angular/router';
 export class MovieComponent implements OnInit {  
 
   movieTitle: string;
+  imagePath: string;
 
   constructor(route: ActivatedRoute) { 
     this.movieTitle = route.snapshot.params['movieTitle']; 
-    console.log(this.movieTitle);
+    
+    this.checkMovie(this.movieTitle);
   }
 
   ngOnInit() {
     
+  }
+
+  checkMovie(movie) {
+    
+    switch(movie) {
+      case 'odyssey':
+        this.imagePath = "../../../assets/images/odyssey.jpg";
+        break;
+      case 'casablanca':
+        this.imagePath = "../../../assets/images/casablanca.jpg";
+        break;
+      default:
+        // code block
+    } 
+
   }
 
 }
